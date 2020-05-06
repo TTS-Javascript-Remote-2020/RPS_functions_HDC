@@ -1,19 +1,21 @@
 // Define a `hands` array with the values 'rock', 'paper', and 'scissors';
-let hands = ['rock', 'paper', 'scissors'];
+// const HANDS = ['rock', 'paper', 'scissors'];
 
 // 2. Define a function called `getHand()` that returns a hand from the array using `parseInt(Math.random()*10)%3`
 const getHand = () => {
-  return hands[parseInt(Math.random()*10)%3];
+  const HANDS = ['rock', 'paper', 'scissors'];
+  return HANDS[parseInt(Math.random()*10)%3];
 };
 
 // 3. Define two objects for two players. Each player has `name` and `getHand()` properties.
 const createPlayers = (numberOfPlayers) => {
-  const names = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah"];
+  const NAMES = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah",
+              "Liam", "Noah", "William", "James", "Oliver", "Benjamin", "Elijah", "Lucas", "Mason", "Logan"];
   const players = [];
   for (let i = 0; i < numberOfPlayers; i++) {
     players.push({
       id: i,
-      name: names[Math.floor((Math.random()*75)%6)],
+      name: NAMES[Math.floor((Math.random()*2498)%20)],
       getHand: () => getHand()
     })
   }
@@ -47,7 +49,7 @@ const playRound = (player1, player2) => {
         console.log(`${player1.name} played ${hand1} while ${player2.name} played ${hand2}. ${player1.name} wins.`);
         return player1;
       } else {
-        console.log(`${player2.name} played ${hand2} while ${player1.name} played ${hand1}. ${player2.name} wins. The student surpasses the master.`);
+        console.log(`${player2.name} played ${hand2} while ${player1.name} played ${hand1}. ${player2.name} wins. `);
         return player2;
       }
 
@@ -74,7 +76,7 @@ const playGame = (player1, player2, playUntil) => {
   player1.wins = 0;
   player2.wins = 0;
 
-  console.log(`${winner.name} has won ${winner.wins} rounds. She is the game winner.`);
+  console.log(`${winner.name} has won ${winner.wins} rounds. She/he is the game winner.`);
   return winner;
 };
 

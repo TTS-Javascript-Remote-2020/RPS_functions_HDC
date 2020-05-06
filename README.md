@@ -14,7 +14,7 @@ Rock Paper Scissors...
  - When one player has won enough games, return the winning player object
 6. Play a game to 5 wins
 **Bonus Questions**
-- Define a function caled `playTournament()`
+- Define a function called `playTournament()`
  - Take 4 players and `playUntil` as arguments
  - Play a game between the first two players, and the second two players
  - Play a game between the winners of the first round.

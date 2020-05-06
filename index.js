@@ -36,8 +36,8 @@ let player2 = {
 //    - If its a tie, log the hands played and "it's a tie".
 //    - Returns the winner object (null if no winner)
 const playRound = (player1, player2) => {
-  hand1 = player1.getHand();
-  hand2 = player2.getHand();
+  let hand1 = player1.getHand();
+  let hand2 = player2.getHand();
   if (hand1 === hand2) {
     console.log(`Both ${player1.name} and ${player2.name} played ${hand2}. It's a tie.`)
     return null;
@@ -96,4 +96,4 @@ const playTournament = (players, playUntil) => {
 };
 
 const playersTournament1 = createPlayers(4);
-playTournament(playersTournament1);
+playTournament(playersTournament1, 5);

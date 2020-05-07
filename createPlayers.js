@@ -3,7 +3,7 @@ const getHand = () => {
   return HANDS[parseInt(Math.random()*10)%3];
 };
 
-module.export = (numberOfPlayers) => {
+module.exports = (numberOfPlayers) => {
   const NAMES = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah",
               "Liam", "Noah", "William", "James", "Oliver", "Benjamin", "Elijah", "Lucas", "Mason", "Logan"];
   const players = [];

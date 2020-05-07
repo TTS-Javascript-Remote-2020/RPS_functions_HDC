@@ -1,4 +1,4 @@
-const createPlayers = require './createPlayers.js';
+const createPlayers = require('./createPlayers.js');
 
 // Define a `hands` array with the values 'rock', 'paper', and 'scissors';
 // const HANDS = ['rock', 'paper', 'scissors'];
@@ -23,8 +23,8 @@ const createPlayers = require './createPlayers.js';
 //   }
 //   return players;
 // }
-let player 1 = createPlayers(1);
-let player 2 = createPlayers(1);
+let player1 = createPlayers(1);
+let player2 = createPlayers(1);
 // let player1 = {
 //   name: 'Master',
 //   getHand: () => getHand()

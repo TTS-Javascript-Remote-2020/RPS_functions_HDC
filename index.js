@@ -1,3 +1,5 @@
+const createPlayers = require './createPlayers.js';
+
 // Define a `hands` array with the values 'rock', 'paper', and 'scissors';
 // const HANDS = ['rock', 'paper', 'scissors'];
 
@@ -8,19 +10,20 @@ const getHand = () => {
 };
 
 // 3. Define two objects for two players. Each player has `name` and `getHand()` properties.
-const createPlayers = (numberOfPlayers) => {
-  const NAMES = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah",
-              "Liam", "Noah", "William", "James", "Oliver", "Benjamin", "Elijah", "Lucas", "Mason", "Logan"];
-  const players = [];
-  for (let i = 0; i < numberOfPlayers; i++) {
-    players.push({
-      id: i,
-      name: NAMES[Math.floor((Math.random()*2498)%20)],
-      getHand: () => getHand()
-    })
-  }
-  return players;
-}
+// const createPlayers = (numberOfPlayers) => {
+//   const NAMES = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah",
+//               "Liam", "Noah", "William", "James", "Oliver", "Benjamin", "Elijah", "Lucas", "Mason", "Logan"];
+//   const players = [];
+//   for (let i = 0; i < numberOfPlayers; i++) {
+//     players.push({
+//       id: i,
+//       name: NAMES[Math.floor((Math.random()*2498)%20)],
+//       getHand: () => getHand()
+//     })
+//   }
+//   return players;
+// }
+
 let player1 = {
   name: 'Master',
   getHand: () => getHand()

@@ -34,3 +34,5 @@ Stars
 https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/scope-closures
 8:22
 Read chapters 1-5 in the above "book"
+
+[![Run on Repl.it](https://repl.it/badge/github/TTS-Javascript-Remote-2020/RPS_functions_HDC)](https://repl.it/github/TTS-Javascript-Remote-2020/RPS_functions_HDC)

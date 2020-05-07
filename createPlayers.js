@@ -1,4 +1,9 @@
-module.exports = (numberOfPlayers) => {
+const getHand = () => {
+  const HANDS = ['rock', 'paper', 'scissors'];
+  return HANDS[parseInt(Math.random()*10)%3];
+};
+
+module.export = (numberOfPlayers) => {
   const NAMES = ["Sophia", "Olivia", "Emma", "Ava", "Aria", "Isabella", "Amelia", "Mia", "Riley", "Aaliyah",
               "Liam", "Noah", "William", "James", "Oliver", "Benjamin", "Elijah", "Lucas", "Mason", "Logan"];
   const players = [];

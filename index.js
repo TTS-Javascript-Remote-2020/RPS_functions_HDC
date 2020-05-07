@@ -4,10 +4,10 @@ const createPlayers = require './createPlayers.js';
 // const HANDS = ['rock', 'paper', 'scissors'];
 
 // 2. Define a function called `getHand()` that returns a hand from the array using `parseInt(Math.random()*10)%3`
-const getHand = () => {
-  const HANDS = ['rock', 'paper', 'scissors'];
-  return HANDS[parseInt(Math.random()*10)%3];
-};
+// const getHand = () => {
+//   const HANDS = ['rock', 'paper', 'scissors'];
+//   return HANDS[parseInt(Math.random()*10)%3];
+// };
 
 // 3. Define two objects for two players. Each player has `name` and `getHand()` properties.
 // const createPlayers = (numberOfPlayers) => {
@@ -23,15 +23,16 @@ const getHand = () => {
 //   }
 //   return players;
 // }
-
-let player1 = {
-  name: 'Master',
-  getHand: () => getHand()
-};
-let player2 = {
-  name: 'Student',
-  getHand: () => getHand()
-}
+let player 1 = createPlayers(1);
+let player 2 = createPlayers(1);
+// let player1 = {
+//   name: 'Master',
+//   getHand: () => getHand()
+// };
+// let player2 = {
+//   name: 'Student',
+//   getHand: () => getHand()
+// }
 
 // 4. Define a function called `playRound()` that
 //    - Takes two player objects as arguments
@@ -40,6 +41,7 @@ let player2 = {
 //    - Logs the hands played and name of the winner.
 //    - If its a tie, log the hands played and "it's a tie".
 //    - Returns the winner object (null if no winner)
+
 const playRound = (player1, player2) => {
   let hand1 = player1.getHand();
   let hand2 = player2.getHand();

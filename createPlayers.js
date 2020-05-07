@@ -11,7 +11,7 @@ module.exports = (numberOfPlayers) => {
     players.push({
       id: i,
       name: NAMES[Math.floor((Math.random()*2498)%20)],
-      getHand: () => getHand()
+      getHand: getHand
     })
   }
   return players;

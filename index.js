@@ -16,18 +16,18 @@ const createPlayers = (numberOfPlayers) => {
     players.push({
       id: i,
       name: NAMES[Math.floor((Math.random()*2498)%20)],
-      getHand: () => getHand()
+      getHand: getHand
     })
   }
   return players;
 }
 let player1 = {
   name: 'Master',
-  getHand: () => getHand()
+  getHand: getHand
 };
 let player2 = {
   name: 'Student',
-  getHand: () => getHand()
+  getHand: getHand
 }
 
 // 4. Define a function called `playRound()` that
